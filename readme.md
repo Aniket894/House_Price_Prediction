@@ -3,12 +3,19 @@
 ## Table of Contents
 
 Introduction
+
 Project Overview
+
 Data Preprocessing
+
 Feature Engineering
+
 Modeling
+
 Model Evaluation
+
 Conclusion
+
 App Structure
 
 ## Introduction
