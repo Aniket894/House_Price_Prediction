@@ -236,9 +236,15 @@ After Evaluation the Results of all model by r2 score , Gradient Boosting Regres
 ## Conclusion
 This documentation provides an overview of the house price prediction project, detailing the features used, preprocessing steps, regression models, hyperparameters, and the process of hyperparameter tuning with randomized search. The final model's performance highlights the effectiveness of using multiple regression techniques and tuning them to achieve accurate predictions.
 
+## Flask App
 
-## App Structure
+I create a flask app to predict the house price with the help of model.pkl file.
 
+
+
+## Flask App Structure
+
+```
 project/
 │
 ├── app/
