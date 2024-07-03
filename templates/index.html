@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>House Price Prediction</h1>
+            <form action="/predict" method="POST">
+                <label for="MSSubClass">MSSubClass:</label>
+                <input type="text" id="MSSubClass" name="MSSubClass" placeholder="Enter MSSubClass"><br><br>
+                
+                <label for="MSZoning">MSZoning:</label>
+                <input type="text" id="MSZoning" name="MSZoning" placeholder="Enter MSZoning"><br><br>
+                
+                <label for="LotFrontage">LotFrontage:</label>
+                <input type="text" id="LotFrontage" name="LotFrontage" placeholder="Enter LotFrontage"><br><br>
+                
+                <label for="LotArea">LotArea:</label>
+                <input type="text" id="LotArea" name="LotArea" placeholder="Enter LotArea"><br><br>
+                
+                <label for="Street">Street:</label>
+                <input type="text" id="Street" name="Street" placeholder="Enter Street"><br><br>
+                
+                <label for="Alley">Alley:</label>
+                <input type="text" id="Alley" name="Alley" placeholder="Enter Alley"><br><br>
+                
+                <label for="LotShape">LotShape:</label>
+                <input type="text" id="LotShape" name="LotShape" placeholder="Enter LotShape"><br><br>
+                
+                <label for="LandContour">LandContour:</label>
+                <input type="text" id="LandContour" name="LandContour" placeholder="Enter LandContour"><br><br>
+                
+                <label for="Utilities">Utilities:</label>
+                <input type="text" id="Utilities" name="Utilities" placeholder="Enter Utilities"><br><br>
+                
+                <label for="LotConfig">LotConfig:</label>
+                <input type="text" id="LotConfig" name="LotConfig" placeholder="Enter LotConfig"><br><br>
+                
+                <label for="LandSlope">LandSlope:</label>
+                <input type="text" id="LandSlope" name="LandSlope" placeholder="Enter LandSlope"><br><br>
+                
+                <label for="Neighborhood">Neighborhood:</label>
+                <input type="text" id="Neighborhood" name="Neighborhood" placeholder="Enter Neighborhood"><br><br>
+                
+                <label for="Condition1">Condition1:</label>
+                <input type="text" id="Condition1" name="Condition1" placeholder="Enter Condition1"><br><br>
+                
+                <label for="Condition2">Condition2:</label>
+                <input type="text" id="Condition2" name="Condition2" placeholder="Enter Condition2"><br><br>
+                
+                <label for="HouseStyle">HouseStyle:</label>
+                <input type="text" id="HouseStyle" name="HouseStyle" placeholder="Enter HouseStyle"><br><br>
+                
+                <label for="OverallQual">OverallQual:</label>
+                <input type="text" id="OverallQual" name="OverallQual" placeholder="Enter OverallQual"><br><br>
+                
+                <label for="OverallCond">OverallCond:</label>
+                <input type="text" id="OverallCond" name="OverallCond" placeholder="Enter OverallCond"><br><br>
+                
+                <label for="YearBuilt">YearBuilt:</label>
+                <input type="text" id="YearBuilt" name="YearBuilt" placeholder="Enter YearBuilt"><br><br>
+                
+                <label for="YearRemodAdd">YearRemodAdd:</label>
+                <input type="text" id="YearRemodAdd" name="YearRemodAdd" placeholder="Enter YearRemodAdd"><br><br>
+                
+                <label for="RoofStyle">RoofStyle:</label>
+                <input type="text" id="RoofStyle" name="RoofStyle" placeholder="Enter RoofStyle"><br><br>
+                
+                <label for="RoofMatl">RoofMatl:</label>
+                <input type="text" id="RoofMatl" name="RoofMatl" placeholder="Enter RoofMatl"><br><br>
+                
+                <label for="Exterior1st">Exterior1st:</label>
+                <input type="text" id="Exterior1st" name="Exterior1st" placeholder="Enter Exterior1st"><br><br>
+                
+                <label for="MasVnrType">MasVnrType:</label>
+                <input type="text" id="MasVnrType" name="MasVnrType" placeholder="Enter MasVnrType"><br><br>
+                
+                <label for="MasVnrArea">MasVnrArea:</label>
+                <input type="text" id="MasVnrArea" name="MasVnrArea" placeholder="Enter MasVnrArea"><br><br>
+                
+                <label for="ExterQual">ExterQual:</label>
+                <input type="text" id="ExterQual" name="ExterQual" placeholder="Enter ExterQual"><br><br>
+                
+                <label for="ExterCond">ExterCond:</label>
+                <input type="text" id="ExterCond" name="ExterCond" placeholder="Enter ExterCond"><br><br>
+                
+                <label for="Foundation">Foundation:</label>
+                <input type="text" id="Foundation" name="Foundation" placeholder="Enter Foundation"><br><br>
+                
+                <label for="BsmtQual">BsmtQual:</label>
+                <input type="text" id="BsmtQual" name="BsmtQual" placeholder="Enter BsmtQual"><br><br>
+                
+                <label for="BsmtCond">BsmtCond:</label>
+                <input type="text" id="BsmtCond" name="BsmtCond" placeholder="Enter BsmtCond"><br><br>
+                
+                <label for="BsmtExposure">BsmtExposure:</label>
+                <input type="text" id="BsmtExposure" name="BsmtExposure" placeholder="Enter BsmtExposure"><br><br>
+                
+                <label for="BsmtFinType1">BsmtFinType1:</label>
+                <input type="text" id="BsmtFinType1" name="BsmtFinType1" placeholder="Enter BsmtFinType1"><br><br>
+                
+                <label for="BsmtFinSF1">BsmtFinSF1:</label>
+                <input type="text" id="BsmtFinSF1" name="BsmtFinSF1" placeholder="Enter BsmtFinSF1"><br><br>
+                
+                <label for="BsmtFinType2">BsmtFinType2:</label>
+                <input type="text" id="BsmtFinType2" name="BsmtFinType2" placeholder="Enter BsmtFinType2"><br><br>
+
+                
+                <label for="BsmtUnfSF">BsmtUnfSF:</label>
+                <input type="text" id="BsmtUnfSF" name="BsmtUnfSF" placeholder="Enter BsmtUnfSF"><br><br>
+                
+                <label for="TotalBsmtSF">TotalBsmtSF:</label>
+                <input type="text" id="TotalBsmtSF" name="TotalBsmtSF" placeholder="Enter TotalBsmtSF"><br><br>
+                
+                <label for="Heating">Heating:</label>
+                <input type="text" id="Heating" name="Heating" placeholder="Enter Heating"><br><br>
+                
+                <label for="HeatingQC">HeatingQC:</label>
+                <input type="text" id="HeatingQC" name="HeatingQC" placeholder="Enter HeatingQC"><br><br>
+                
+                <label for="CentralAir">CentralAir:</label>
+                <input type="text" id="CentralAir" name="CentralAir" placeholder="Enter CentralAir"><br><br>
+                
+                <label for="Electrical">Electrical:</label>
+                <input type="text" id="Electrical" name="Electrical" placeholder="Enter Electrical"><br><br>
+                
+                <label for="2ndFlrSF">2ndFlrSF:</label>
+                <input type="text" id="2ndFlrSF" name="2ndFlrSF" placeholder="Enter 2ndFlrSF"><br><br>
+                
+                <label for="LowQualFinSF">LowQualFinSF:</label>
+                <input type="text" id="LowQualFinSF" name="LowQualFinSF" placeholder="Enter LowQualFinSF"><br><br>
+                
+                <label for="GrLivArea">GrLivArea:</label>
+                <input type="text" id="GrLivArea" name="GrLivArea" placeholder="Enter GrLivArea"><br><br>
+                
+                <label for="BsmtFullBath">BsmtFullBath:</label>
+                <input type="text" id="BsmtFullBath" name="BsmtFullBath" placeholder="Enter BsmtFullBath"><br><br>
+                
+                <label for="BsmtHalfBath">BsmtHalfBath:</label>
+                <input type="text" id="BsmtHalfBath" name="BsmtHalfBath" placeholder="Enter BsmtHalfBath"><br><br>
+                
+                <label for="FullBath">FullBath:</label>
+                <input type="text" id="FullBath" name="FullBath" placeholder="Enter FullBath"><br><br>
+                
+                <label for="HalfBath">HalfBath:</label>
+                <input type="text" id="HalfBath" name="HalfBath" placeholder="Enter HalfBath"><br><br>
+                
+                <label for="BedroomAbvGr">BedroomAbvGr:</label>
+                <input type="text" id="BedroomAbvGr" name="BedroomAbvGr" placeholder="Enter BedroomAbvGr"><br><br>
+                
+                <label for="KitchenAbvGr">KitchenAbvGr:</label>
+                <input type="text" id="KitchenAbvGr" name="KitchenAbvGr" placeholder="Enter KitchenAbvGr"><br><br>
+                
+                <label for="KitchenQual">KitchenQual:</label>
+                <input type="text" id="KitchenQual" name="KitchenQual" placeholder="Enter KitchenQual"><br><br>
+                
+                <label for="Functional">Functional:</label>
+                <input type="text" id="Functional" name="Functional" placeholder="Enter Functional"><br><br>
+                
+                <label for="Fireplaces">Fireplaces:</label>
+                <input type="text" id="Fireplaces" name="Fireplaces" placeholder="Enter Fireplaces"><br><br>
+                
+                <label for="FireplaceQu">FireplaceQu:</label>
+                <input type="text" id="FireplaceQu" name="FireplaceQu" placeholder="Enter FireplaceQu"><br><br>
+                
+                <label for="GarageType">GarageType:</label>
+                <input type="text" id="GarageType" name="GarageType" placeholder="Enter GarageType"><br><br>
+                
+                <label for="GarageFinish">GarageFinish:</label>
+                <input type="text" id="GarageFinish" name="GarageFinish" placeholder="Enter GarageFinish"><br><br>
+                
+                <label for="GarageCars">GarageCars:</label>
+                <input type="text" id="GarageCars" name="GarageCars" placeholder="Enter GarageCars"><br><br>
+                
+                <label for="GarageQual">GarageQual:</label>
+                <input type="text" id="GarageQual" name="GarageQual" placeholder="Enter GarageQual"><br><br>
+                
+                <label for="GarageCond">GarageCond:</label>
+                <input type="text" id="GarageCond" name="GarageCond" placeholder="Enter GarageCond"><br><br>
+                
+                <label for="PavedDrive">PavedDrive:</label>
+                <input type="text" id="PavedDrive" name="PavedDrive" placeholder="Enter PavedDrive"><br><br>
+                
+                <label for="WoodDeckSF">WoodDeckSF:</label>
+                <input type="text" id="WoodDeckSF" name="WoodDeckSF" placeholder="Enter WoodDeckSF"><br><br>
+                
+                <label for="OpenPorchSF">OpenPorchSF:</label>
+                <input type="text" id="OpenPorchSF" name="OpenPorchSF" placeholder="Enter OpenPorchSF"><br><br>
+                
+                <label for="EnclosedPorch">EnclosedPorch:</label>
+                <input type="text" id="EnclosedPorch" name="EnclosedPorch" placeholder="Enter EnclosedPorch"><br><br>
+                
+                <label for="3SsnPorch">3SsnPorch:</label>
+                <input type="text" id="3SsnPorch" name="3SsnPorch" placeholder="Enter 3SsnPorch"><br><br>
+                
+                <label for="ScreenPorch">ScreenPorch:</label>
+                <input type="text" id="ScreenPorch" name="ScreenPorch" placeholder="Enter ScreenPorch"><br><br>
+                
+                <label for="PoolArea">PoolArea:</label>
+                <input type="text" id="PoolArea" name="PoolArea" placeholder="Enter PoolArea"><br><br>
+                
+                
+                
+                <label for="Fence">Fence:</label>
+                <input type="text" id="Fence" name="Fence" placeholder="Enter Fence"><br><br>
+                
+                <label for="MiscFeature">MiscFeature:</label>
+                <input type="text" id="MiscFeature" name="MiscFeature" placeholder="Enter MiscFeature"><br><br>
+                
+                <label for="MiscVal">MiscVal:</label>
+                <input type="text" id="MiscVal" name="MiscVal" placeholder="Enter MiscVal"><br><br>
+                
+                <label for="MoSold">MoSold:</label>
+                <input type="text" id="MoSold" name="MoSold" placeholder="Enter MoSold"><br><br>
+                
+                <label for="YrSold">YrSold:</label>
+                <input type="text" id="YrSold" name="YrSold" placeholder="Enter YrSold"><br><br>
+                
+                <label for="SaleType">SaleType:</label>
+                <input type="text" id="SaleType" name="SaleType" placeholder="Enter SaleType"><br><br>
+                
+                <label for="SaleCondition">SaleCondition:</label>
+                <input type="text" id="SaleCondition" name="SaleCondition" placeholder="Enter SaleCondition"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+                
+    </div>
+</body>
+</html>
